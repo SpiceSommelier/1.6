@@ -1,0 +1,40 @@
+.menu {
+  min-width: 320px;
+  min-height: 1024px;
+  overflow-y: hidden;
+  background-color: white;
+  @media (min-width: $normal-width) {
+    box-shadow: -75px -1024px 100px 0;
+  }
+  @media (max-width: $normal-width) {
+    position: absolute;
+    top: 0;
+    left: -320px;
+    z-index: 100;
+  }
+}
+
+.menu-container {
+  @media (min-width: $normal-width) {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    min-width: 320px;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.menu--visible {
+  transform: translateX(320px);
+  transition-duration: 0.2s;
+  box-shadow: 0 0 0 1111px rgba(255, 255, 255, 0.9);
+}
+
+.menu--hide {
+  transform: translateX(-320px);
+  transition-duration: 0.3s;
+  box-shadow: unset;
+}

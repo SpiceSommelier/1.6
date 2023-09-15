@@ -1,0 +1,34 @@
+.repair-section {
+  overflow-x: hidden;
+  &__pagination {
+    position: relative;
+    margin-top: 16px;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: $pagination-color;
+  width: 12px;
+  height: 12px;
+  &-active {
+    background-color: $pagination-chosen-color;
+  }
+}
+
+.swiper-slide {
+  @media (min-width: $tablet-width) {
+    flex-shrink: unset;
+    width: unset;
+    height: unset;
+    position: unset;
+    transition-property: unset;
+    display: unset;
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+  min-width: 0;
+}

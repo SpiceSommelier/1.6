@@ -1,0 +1,82 @@
+%splitter-template {
+  content: '';
+  display: block;
+  background-color: $splitter-color;
+  height: 32px;
+  width: 2px;
+  margin-top: 28px;
+}
+
+.header {
+  background-color: white;
+  width: auto;
+  display: flex;
+  height: 88px;
+  border-bottom: 1px solid $border-color;
+  @media (min-width: $normal-width) {
+    display: none;
+  }
+  &__logo-layout {
+    margin-left: 16px;
+    display: flex;
+    &::after {
+      @extend %splitter-template;
+      margin-left: 16px;
+      margin-right: 20px;
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+    & .header__button {
+      @media (min-width: $tablet-width) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__splitter {
+    @extend %splitter-template;
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+    margin: 28px 20px;
+  }
+  &__logo {
+    width: 96.55px;
+    height: 50.81px;
+    margin-top: 19px;
+  }
+  &__button {
+    margin-top: 24px;
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  &__button--hidden {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+  &__layout-right {
+    display: flex;
+    margin-left: auto;
+    &::after {
+      display: none;
+      @extend %splitter-template;
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+      margin: 28px 20px;
+    }
+  }
+  &__button-layout {
+    display: flex;
+    @media (max-width: $tablet-width) {
+      margin-left: auto;
+    }
+  }
+}

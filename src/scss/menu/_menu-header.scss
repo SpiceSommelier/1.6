@@ -1,0 +1,35 @@
+.menu-header {
+  display: flex;
+  height: 90px;
+  &__logo {
+    height: 51px;
+    width: 97px;
+    margin-top: 19px;
+    margin-left: 16.73px;
+  }
+  &__button {
+    width: 40px;
+    height: 40px;
+    margin-top: 23px;
+    border-radius: 50%;
+    border: 0;
+    transition-duration: 0.5s;
+    &--close {
+      margin-left: 24px;
+      background: $button-color url(/src/img/iconClose.svg) no-repeat 50% 50%;
+      @media (min-width: $normal-width) {
+        display: none;
+      }
+    }
+    &--search {
+      margin-left: auto;
+      margin-right: 24px;
+      background: $button-color url(/src/img/iconSearch.svg) no-repeat 50% 50%;
+    }
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+      transition-duration: 0.5s;
+    }
+  }
+}

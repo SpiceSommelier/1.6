@@ -1,0 +1,65 @@
+.main-header {
+  text-align: left;
+  margin-top: 24px;
+  position: relative;
+  font-family: $font-family-lakes;
+  font-weight: 700;
+  @media (min-width: $normal-width) {
+    margin-top: 42px;
+    display: flex;
+    max-width: 1096px;
+  }
+  &__headline {
+    margin-left: 16px;
+    @media (min-width: $tablet-width) {
+      margin-left: 24px;
+    }
+    @media (min-width: $normal-width) {
+      margin-left: 35px;
+    }
+    font-weight: 700;
+    font-size: 28px;
+    &::before {
+      left: 0;
+      top: -6px;
+      position: absolute;
+      display: block;
+      content: '';
+      width: 4px;
+      height: 40px;
+      background-color: $highlight-color;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  &__button {
+    font-family: $font-family-lakes;
+    font-weight: 500;
+    text-align: center;
+    width: 168px;
+    height: 40px;
+    display: flex;
+    transition-duration: 0.2s;
+    &--text {
+      padding-top: 8px;
+    }
+    &--image {
+      width: 40px;
+      height: 40px;
+      margin-left: 5px;
+    }
+    &:hover {
+      transform: scale(1.2);
+      transition-duration: 0.2s;
+    }
+  }
+  &__buttons-container {
+    margin-left: auto;
+    &--hidden {
+      display: none;
+      @media (min-width: $normal-width) {
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='import' href='repair-brand-section.html')
+  body
+      include menu
+      include modal-feedback
+      include modal-call-order
+      div.content-container
+        header.header
+          .header__logo-layout
+            button.header__button.header__button--menu
+              img.header__button--image(src='./img/iconMenu.svg')
+            .header__splitter
+            img.header__logo(src='./img/logo.svg' alt='Логотип')
+          .header__layout-right
+            button.header__button.header__button--call.header__button--hidden
+              img(src='./img/iconCall.svg')
+            button.header__button.header__button--message.header__button--hidden
+              img(src='./img/iconMessage.svg')
+            button.header__button.header__button--profile.header__button--hidden
+              img(src='./img/iconProfile.svg')
+          .header__button-layout
+            button.header__button.header__button--request
+              img(src='./img/iconRequest.svg')
+            button.header__button.header__button--status
+              img(src='./img/iconStatus.svg')
+        main.main
+          .main-header
+            h1.main-header__headline
+              nobr Услуги и сервисы
+            .main-header__buttons-container.main-header__buttons-container--hidden
+              button.main-header__button
+                nobr
+                  .main-header__button--text Оставить заявку
+                img.main-header__button--image(src='img/iconRequest.svg')
+              button.main-header__button
+                nobr
+                  .main-header__button--text Статус ремонта
+                img.main-header__button--image(src='img/iconStatus.svg')
+          nav.nav
+            button.nav__button.nav__button--chosen
+              nobr Ремонтируемые бренды
+            button.nav__button
+              nobr Ремонтируемые устройства
+            button.nav__button
+              nobr Цены на услуги
+            button.nav__button
+              nobr Адреса сервисных центров
+            button.nav__button
+              nobr Специальные цены
+            button.nav__button
+              nobr Отзывы
+          article.main-info
+            .main-info__container
+              p.main-info__text.main-info__text--hidden
+                | Мы являемся авторизованным
+                br
+                |             сервисным центром по ремонту техники
+                br
+                |             Dell.Только у нас вы можете
+                br
+                |             отремонтировать свой ноутбук Dell с официальной гарантией
+                |             производителя.
+              p.main-info__text.main-info__text--hidden
+                | Мы являемся авторизованным сервисным 
+                br
+                |             центром по ремонту техники Dell. Только у нас
+                br
+                |             вы можете отремонтировать свой ноутбук
+                br
+                |             Dell с официальной гарантией 
+                br
+                |             производителя. 
+                br
+                br
+                |             Мы успешно работаем с 1992 года и
+                br
+                |             заслужили репутацию надежного партнера
+              p.main-info__text.main-info__text--hidden
+                | Мы являемся авторизованным сервисным центром по ремонту техники
+                br
+                |             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                br
+                |             официальной гарантией производителя. 
+                br
+                br
+                |             Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                br
+                |             партнера, что подтверждает большое количество постоянных
+                |             клиентов.
+                br
+                |             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                br
+                |             очередь, советуют нас родным и близким.
+              button.main-info__button
+                img(src='./img/iconExpand.svg')
+                |             Читать далее
+            img.main-info__image.main-info__image--hidden(src='./img/mainPhotoMobile.jpg' alt='Фото логотипа компании')
+            img.main-info__image.main-info__image--hidden(src='./img/mainPhotoTablet.jpg' alt='Фото логотипа компании')
+            img.main-info__image(src='./img/mainPhotoNormal.jpg' alt='Фото логотипа компании')
+        
+        include repair-brand-section    
+        include repair-various-section
+        include repair-price-section
+        include footer      

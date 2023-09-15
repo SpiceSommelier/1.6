@@ -1,0 +1,35 @@
+.nav {
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
+  @media (min-width: $normal-width) {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  margin-top: 24px;
+  margin-left: 16px;
+  display: flex;
+  overflow-x: scroll;
+  &__button {
+    font-family: $font-family-lakes;
+    font-weight: 500;
+    color: $grey-text-color;
+    font-size: 16px;
+    min-width: 246px;
+    margin-right: 5px;
+    @media (min-width: $normal-width) {
+      min-width: 95px;
+      max-width: 233px;
+      padding: 8px 10px;
+    }
+    height: 40px;
+    border-radius: 5px;
+    &--chosen {
+      border: solid 2px $button-border;
+    }
+    &:hover {
+      color: black;
+    }
+  }
+}

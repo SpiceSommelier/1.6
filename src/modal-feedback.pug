@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  body
+    article.feedback
+      button.feedback__close-button
+      h2.feedback__headline Обратная связь
+      form.feedback__form(action='')
+        input.feedback__input(type='text' placeholder='Имя' required='')
+        input.feedback__input(type='text' placeholder='Телефон' required='')
+        input.feedback__input(type='text' placeholder='Электронная почта')
+        input.feedback__input(type='text' placeholder='Сообщение' required='')
+        p.feedback__text
+          | Нажимая “отправить”, вы даете согласие на
+          a.feedback__text--link(href='') обработку персональных данных
+          |           и соглашаетесь с нашей
+          a.feedback__text--link(href='')
+          |             политикой конфиденциальности
+        button.feedback__button ОТПРАВИТЬ

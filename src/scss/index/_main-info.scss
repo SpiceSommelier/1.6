@@ -1,0 +1,79 @@
+.main-info {
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+  @media (min-width: $normal-width) {
+    width: 1096px;
+  }
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+  &__container {
+    @media (max-width: $tablet-width) {
+      margin-left: 16px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    font-family: $font-family-lakes;
+    color: #1b1c21;
+    &--hidden {
+      display: none;
+    }
+    &--hidden:nth-child(1) {
+      @media (max-width: $tablet-width) {
+        display: block;
+      }
+    }
+    &--hidden:nth-child(2) {
+      @media (min-width: $tablet-width) and (max-width: $normal-width) {
+        display: block;
+      }
+    }
+    &--hidden:nth-child(3) {
+      @media (min-width: $normal-width) {
+        display: block;
+      }
+    }
+  }
+  &__button {
+    margin-top: 16px;
+    @media (min-width: $normal-width) {
+      margin: 0;
+      margin-top: 13px;
+    }
+    width: 132px;
+    height: 24px;
+    font-family: $font-family-lakes;
+    font-weight: 500;
+    position: relative;
+    & img {
+      position: absolute;
+      left: -4px;
+      top: -1px;
+    }
+  }
+  &__image {
+    @media (max-width: $tablet-width) {
+      margin-top: 16px;
+    }
+    width: 320px;
+    height: 176px;
+    @media (min-width: $tablet-width) and (max-width: $normal-width) {
+      margin-left: 48px;
+      width: 360px;
+      height: 208px;
+    }
+    @media (min-width: $normal-width) {
+      margin-left: 36px;
+      width: 532px;
+      height: 307px;
+    }
+    &--hidden {
+      display: none;
+    }
+  }
+}

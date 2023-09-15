@@ -1,0 +1,13 @@
+body {
+  background-color: $background-color-light-grey;
+  @media (min-width: $normal-width) {
+    display: flex;
+  }
+}
+.content-container {
+  @media (min-width: $normal-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

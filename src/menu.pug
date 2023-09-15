@@ -1,0 +1,41 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  article.menu
+      div.menu-container
+        .menu-header
+          button.menu-header__button.menu-header__button--close
+          img.menu-header__logo(src='./img/logo.svg')
+          button.menu-header__button.menu-header__button--search
+        nav.menu-nav
+          ul.menu-nav__ulist
+            li.menu-nav__li.menu-nav__li--current
+              a.menu-nav__link(href='') Ремонт техники
+            li.menu-nav__li
+              a.menu-nav__link(href='') Услуги и сервисы
+            li.menu-nav__li
+              a.menu-nav__link(href='') Корпоративным клиентам
+            li.menu-nav__li
+              a.menu-nav__link(href='') Продавцам техники
+            li.menu-nav__li
+              a.menu-nav__link(href='') Партнерам
+            li.menu-nav__li
+              a.menu-nav__link(href='') Производителям
+            li.menu-nav__li
+              a.menu-nav__link(href='') Наши сервисные центры
+            li.menu-nav__li
+              a.menu-nav__link(href='') Контакты
+        .menu-footer
+          .menu-footer__container
+            button.menu-footer__button.menu-footer__button--call
+            button.menu-footer__button.menu-footer__button--message
+            button.menu-footer__button.menu-footer__button--profile
+          .menu-footer__contacts
+            .menu-footer__contacts.menu-footer__contacts--email mail@cps.com
+            .menu-footer__contacts.menu-footer__contacts--number 8 800 890 8900
+          .menu-footer__language-list
+            .menu-footer__language.menu-footer__language--RU.menu-footer__language--current RU
+            .menu-footer__language.menu-footer__language--EN EN
+            .menu-footer__language.menu-footer__language--CH CH

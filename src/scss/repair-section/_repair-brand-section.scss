@@ -1,0 +1,73 @@
+.repair-brand-section {
+  @media (min-width: $normal-width) {
+    min-width: 1120px;
+    width: 100%;
+  }
+  @media (min-width: $tablet-width) and (max-width: $normal-width) {
+    margin-bottom: 32px;
+  }
+  & .swiper-wrapper {
+    padding: 24px 32px;
+  }
+  &__swiper {
+    background-color: $background-color-light-grey;
+    @media (max-width: $tablet-width) {
+      padding: 16px;
+    }
+    @media (min-width: $normal-width) {
+      max-width: 1120px;
+    }
+  }
+  &__swiper-card {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid $splitter-color;
+    min-width: 240px;
+    @media (min-width: $tablet-width) and (max-width: $normal-width) {
+      min-width: 224px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-right: 24px;
+      margin-bottom: 16px;
+    }
+    @media (min-width: $normal-width) {
+      margin-right: 32px;
+    }
+    height: 72px;
+    display: flex;
+    &--image {
+      margin: auto 0;
+      margin-left: 16px;
+      min-width: 44px;
+      max-width: 128px;
+    }
+    &--button {
+      width: 40px;
+      height: 40px;
+      margin: auto 0;
+      margin-left: auto;
+      margin-right: 16px;
+      background-image: url(../img/iconBrandButton.svg);
+      transition-duration: 0.2s;
+      &:hover {
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+      }
+    }
+    &--hidden {
+      display: none;
+    }
+  }
+  &__button-show-hide {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+    font-family: $font-family-lakes;
+    font-weight: 500;
+    width: 132px;
+    height: 24px;
+    background: url(../img/iconExpand.svg) no-repeat 0% 50%;
+    margin-bottom: 50px;
+    margin-left: 31px;
+  }
+}

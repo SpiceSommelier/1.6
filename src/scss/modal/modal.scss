@@ -1,0 +1,15 @@
+.modal-visible {
+  transform: translateX(320px);
+  @media (min-width: $normal-width) {
+    transform: translateX(440px);
+  }
+  transition-duration: 0.2s;
+}
+
+.modal-hide {
+  transform: translateX(-320px);
+  @media (min-width: $normal-width) {
+    transform: translateX(-440px);
+  }
+  transition-duration: 0.2s;
+}

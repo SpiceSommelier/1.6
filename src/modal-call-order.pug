@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  body
+    article.call-order
+      button.call-order__button-close
+      h2.call-order__headline Заказать звонок
+      input.call-order__input(type='tel' name='' id='' placeholder='Телефон')
+      p.call-order__text
+        | Нажимая “отправить”, вы даете согласие на
+        a.feedback__text--link(href='') обработку персональных данных
+        |           и соглашаетесь с нашей
+        a.feedback__text--link(href='')
+        |             политикой конфиденциальности
+      button.call-order__button-send ОТПРАВИТЬ

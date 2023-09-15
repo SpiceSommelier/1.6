@@ -1,0 +1,5 @@
+import '../js/swiper'
+import '../js/modal'
+import '../js/brandCards'
+import '../scss/style.scss'
+import './variousCards'
